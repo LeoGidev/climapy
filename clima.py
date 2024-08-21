@@ -12,3 +12,7 @@ url = f'http://api.openweathermap.org/data/2.5/weather?q={ciudad}&appid={api_key
 # Hacer la solicitud
 respuesta = requests.get(url)
 datos = respuesta.json()
+
+# Extraer la temperatura
+temperatura_actual = datos['main']['temp']
+print(f'Temperatura actual en {ciudad}: {temperatura_actual}°C')
