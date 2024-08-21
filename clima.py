@@ -18,3 +18,8 @@ datos = respuesta.json()
 # Extraer la temperatura
 temperatura_actual = datos['main']['temp']
 print(f'Temperatura actual en {ciudad}: {temperatura_actual}°C')
+
+# Simulación de múltiples llamadas a la API (usando datos actuales repetidos como ejemplo)
+for i in range(5):
+    
+    temperaturas.append(datos['main']['temp'])
