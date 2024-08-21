@@ -32,3 +32,4 @@ print(f'Temperatura promedio en {ciudad}: {promedio}°C')
 tiempos = [datetime.datetime.now() + datetime.timedelta(hours=i) for i in range(len(temperaturas))]
 
 plt.plot(tiempos, temperaturas, marker='o')
+plt.title(f'Temperatura en {ciudad} a lo largo del tiempo')
