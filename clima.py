@@ -34,3 +34,4 @@ tiempos = [datetime.datetime.now() + datetime.timedelta(hours=i) for i in range(
 plt.plot(tiempos, temperaturas, marker='o')
 plt.title(f'Temperatura en {ciudad} a lo largo del tiempo')
 plt.xlabel('Tiempo')
+plt.ylabel('Temperatura (°C)')
