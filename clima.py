@@ -23,3 +23,7 @@ print(f'Temperatura actual en {ciudad}: {temperatura_actual}°C')
 for i in range(5):
     
     temperaturas.append(datos['main']['temp'])
+
+# Calcular el promedio de las temperaturas
+promedio = sum(temperaturas) / len(temperaturas)
+print(f'Temperatura promedio en {ciudad}: {promedio}°C')
