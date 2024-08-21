@@ -27,3 +27,6 @@ for i in range(5):
 # Calcular el promedio de las temperaturas
 promedio = sum(temperaturas) / len(temperaturas)
 print(f'Temperatura promedio en {ciudad}: {promedio}°C')
+
+# Simulando tiempos (fechas o horas)
+tiempos = [datetime.datetime.now() + datetime.timedelta(hours=i) for i in range(len(temperaturas))]
