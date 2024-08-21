@@ -8,3 +8,7 @@ ciudad = 'Ciudad'
 
 # URL de la API para obtener el clima actual
 url = f'http://api.openweathermap.org/data/2.5/weather?q={ciudad}&appid={api_key}&units=metric'
+
+# Hacer la solicitud
+respuesta = requests.get(url)
+datos = respuesta.json()
